@@ -1,0 +1,76 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+
+/* Define Animation Timeline with @keyframes ... {} */
+/* 0% is the begining of the time line, 100% is the end of the timeline. If the animation lasts 10 seconds, 50% would be 5 seconds through the animation */
+@keyframes moveCar{
+	/* Define the begining of the timeline */
+	0%{
+		/* Transform = change the horizontal and/or vertical position of the element */
+		/* First value is horizontal, second value is vertical */
+		transform: translate(-1900px, 0px);
+	}
+	/* Define the end of the timeline */
+	100%{
+		/* In this example, the car stops where it is drawn in illustrator */
+		/* 0px, 0px is the starting point of the element */
+		transform: translate(0px , 0px);
+	}
+}
+
+/* Now that we have the timeline set, let's make it run */
+
+/* Select the element to be animated */
+#rolls{
+	/* Run the moveCar animation, set the duration in seconds */
+	animation: moveCar 6s;
+}
+
+
+/* skyscraper1 */
+
+@keyframes moveSkyscraper1{
+	0%{
+		transform: translate(700px, 0px);
+	}
+	100%{
+		transform: translate(0px , 0px);
+	}
+}
+
+#skyscraper1{
+	animation: moveSkyscraper1 6s;
+}
+
+/* medium_x5F_building */
+
+@keyframes moveMedium_x5F_building{
+	0%{
+		transform: translate(1400px, 0px);
+	}
+	100%{
+		transform: translate(0px , 0px);
+	}
+}
+
+#medium_x5F_building{
+	animation: moveMedium_x5F_building 6s;
+}
+
+/* house */
+
+@keyframes moveHouse{
+	0%{
+		transform: translate(2100px, 0px);
+	}
+	100%{
+		transform: translate(0px , 0px);
+	}
+}
+
+#house{
+	animation: moveHouse 6s;
+}
+
